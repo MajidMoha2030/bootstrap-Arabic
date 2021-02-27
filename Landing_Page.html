@@ -1,0 +1,313 @@
+
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <style>
+  body {
+     padding-bottom:5px;
+}
+ .al-hero-header {
+     background-image: linear-gradient(to right, rgba(255, 0, 71, 0.73), rgba(133, 0, 255, 0.91));
+     background-size:cover;
+     background-repeat:no-repeat;
+     background-position:center center;
+     background-attachment:fixed;
+}
+ .navbar.al-navbar {
+     padding-top:20px;
+     padding-bottom:20px;
+     transition: all 0.5s ease-in-out;
+}
+ .navbar.al-navbar .navbar-brand {
+     font-weight:900;
+}
+ footer {
+    background-color: #2d2d30;
+    color: #f5f5f5;
+    padding: 32px;
+  }
+  footer a {
+    color: #f5f5f5;
+  }
+  footer a:hover {
+    color: #777;
+    text-decoration: none;
+  } 
+ .al-fixed-nav {
+     background:#fff !important;
+     box-shadow:0 0 5px rgba(0,0,0,.2);
+}
+ .al-hero-cta {
+     max-width:750px;
+     margin:0 auto;
+     padding:140px 30px 140px 30px 
+}
+ .al-hero-cta .al-cta-title {
+     color:#fff;
+     padding-top:50px;
+     font-weight:900;
+     font-size:42px;
+}
+ .al-hero-cta .al-cta-desc {
+     color:#fff;
+     font-size:20px;
+}
+.hk-services {
+   
+     font-family: 'PT Sans', sans-serif;
+     padding:80px 0;
+}
+ .hk-services-header h2 {
+     color:#4a5650;
+     font-size:38px;
+     font-weight:700;
+}
+ .hk-services-header p {
+     color:#7a9084;
+     font-size:20px;
+}
+ .hk-services-box {
+     margin:15px 0;
+     padding:30px 15px;
+     transition:all .3s ease-in-out;
+}
+ .hk-services-box i {
+     color:#31e080;
+     font-size:38px;
+     margin-bottom:15px;
+}
+ .hk-services-box h3 {
+     color:#54655c;
+     font-size:22px;
+     font-weight:bold;
+     margin-bottom:0;
+}
+ .hk-services-box:hover {
+     background-image:linear-gradient(to left, #31e080 ,#20f176);
+}
+ .hk-services-box:hover i, .hk-services-box:hover h3 {
+     color:#fff;
+}
+ @media screen and (max-width:767px) {
+     .navbar-toggler {
+         border:none !important;
+         outline:none !important;
+    }
+     .al-transparent-nav .navbar-collapse{
+         background:#251b1d;
+         margin-top:10px;
+         border-radius:5px;
+    }
+     .al-transparent-nav .navbar-nav {
+         padding:10px 20px;
+    }
+     .al-fixed-nav .navbar-nav {
+         padding: 10px 0 !important;
+    }
+}
+</style>
+
+<header class="al-hero-header">
+    <nav id="al-sticky-nav" class="navbar navbar-expand-md navbar-dark al-navbar al-transparent-nav fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">الشعار</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#alStickyNav" aria-controls="alStickyNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="alStickyNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">الرئيسية <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">المنتجات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">العروض</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          الخدمات
+        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Link 1</a>
+                            <a class="dropdown-item" href="#">Link 2</a>
+                            <a class="dropdown-item" href="#">Link 3</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">عن الشركة</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">اتصل بنا</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="al-hero-cta text-center">
+               <h1 class="al-cta-title">Majid Tech</h1>
+        <p class="al-cta-desc">تقديم افضل الخدمات التقنية هو اهم اهدافنا.</p>
+
+        <p class="lead">
+            <a class="btn btn-warning btn-lg" href="#" role="button">لمعرفة اكثر</a>
+            <a class="btn btn-success btn-lg" href="#" role="button">منتجاتنا</a>
+        </p>
+    </div>
+    <svg class="al-wave" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1240 120" style="enable-background:new 0 0 1240 120;" xml:space="preserve">
+        <path class="hk" d="M682.2,39.6C418.5-11.1,140.2,9.9,0,30v96h1440V30C1252.7,52.2,1011,96.4,675.6,38.7z" fill="#ffffff" />
+    </svg>
+</header>
+<div class="container">
+      <div class="card-deck mb-3 text-center">
+			<div class="card mb-4 shadow-sm">
+			  <div class="card-header">
+				<h4 class="my-0 font-weight-normal">مجاناً</h4>
+			  </div>
+			  <div class="card-body">
+				<h1 class="card-title pricing-card-title">0 <small class="text-muted">/ mo</small></h1>
+				<ul class="list-unstyled mt-3 mb-4">
+				  <li> 10 مستخدمين    </li>
+				  <li>2 جيجا تخزين</li>
+				  <li>بريد دعم</li>
+				  <li>مساعدة دخول العملاء</li>
+				</ul>
+				<button type="button" class="btn btn-lg btn-block btn-outline-primary">سجل الان مجانا</button>
+			  </div>
+			</div>
+			<div class="card mb-4 shadow-sm">
+			  <div class="card-header">
+				<h4 class="my-0 font-weight-normal">احترافي</h4>
+			  </div>
+			  <div class="card-body">
+				<h1 class="card-title pricing-card-title">15 ريال <small class="text-muted">/ mo</small></h1>
+				<ul class="list-unstyled mt-3 mb-4">
+				  <li>20 مستخدم</li>
+				  <li>10 جيجا مساحة تخزين</li>
+				  <li>بريد دعم</li>
+				  <li>مساعدة دخول العملاء</li>
+				</ul>
+				<button type="button" class="btn btn-lg btn-block btn-primary">ابدا الان</button>
+			  </div>
+			</div>
+			<div class="card mb-4 shadow-sm">
+			  <div class="card-header">
+				<h4 class="my-0 font-weight-normal">اعمال</h4>
+			  </div>
+			  <div class="card-body">
+				<h1 class="card-title pricing-card-title">29 ريال <small class="text-muted">/ mo</small></h1>
+				<ul class="list-unstyled mt-3 mb-4">
+				  <li>20 مستخدم</li>
+				  <li>10 جيجا مساحة تخزين</li>
+				  <li>بريد دعم</li>
+				  <li>مساعدة دخول العملاء</li>
+				</ul>
+				<button type="button" class="btn btn-lg btn-block btn-primary">اتصل بنا</button>
+			  </div>
+			</div>
+      </div>
+
+      
+    </div>
+  
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <h3>Column 1</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+    <div class="col-sm-4">
+      <h3>Column 2</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+    <div class="col-sm-4">
+      <h3>Column 3</h3>        
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+  </div>
+</div>
+<section class="hk-services well">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="hk-services-header text-center">
+                    <h2>
+                        Services
+                    </h2>
+                    <p class="mt-3 mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo, quam non porttitor sodales, est mauris varius tellus, ac dignissim ante est sit amet augue. In id pharetra neque. </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 col-md-4">
+                <div class="hk-services-box text-center">
+                    <i class="fas fa-paint-brush"></i>
+                    <h3>Design</h3>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="hk-services-box text-center">
+                    <i class="far fa-eye"></i>
+                    <h3>Branding</h3>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="hk-services-box text-center">
+                    <i class="fas fa-desktop"></i>
+                    <h3>UI/UX</h3>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="hk-services-box text-center">
+                    <i class="fas fa-users"></i>
+                    <h3>Marketing</h3>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="hk-services-box text-center">
+                    <i class="fas fa-signal"></i>
+                    <h3>SEO</h3>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="hk-services-box text-center">
+                    <i class="fab fa-twitter"></i>
+                    <h3>SMM</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="text-center">
+  <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a><br><br>
+  <p>Bootstrap Theme Made By <a href="#" data-toggle="tooltip" >Majid Tech</a></p> 
+</footer>
+<script>
+var alNav = document.querySelector('#al-sticky-nav');
+var navChangePoint = 100;
+
+function stickyNav() {
+
+    if (window.scrollY >= navChangePoint) {
+        alNav.classList.add('navbar-light', 'al-fixed-nav');
+        alNav.classList.remove('navbar-dark', 'al-transparent-nav');
+    } else {
+        alNav.classList.remove('navbar-light', 'al-fixed-nav');
+        alNav.classList.add('navbar-dark', 'al-transparent-nav');
+    }
+}
+window.addEventListener('scroll', stickyNav);
+</script>
+
